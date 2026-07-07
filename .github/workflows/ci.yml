@@ -50,7 +50,7 @@ jobs:
 
   deploy:
     needs: [backend-test, frontend-build]
-    runs-on: ubantu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
