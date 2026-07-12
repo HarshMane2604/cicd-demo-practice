@@ -17,4 +17,4 @@ def read_root():
 
 @app.get("/api/message")
 def read_message():
-    return{"message" : "Hello from Fastapi baby"}
+    return{"message" : "Hello from Fastapi"}
