@@ -8,13 +8,13 @@ app.add_middleware(
     allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
-    allow_headers=["*"]
+    allow_headers=["*"],
 )
 
 @app.get("/")
 def read_root():
-    return {"Status": "Backend is running"}
+    return {"status": "backend is running" }
 
 @app.get("/api/message")
 def read_message():
-    return {"message": "Hello from FastAPI python Baby."}
+    return{"message" : "Hello from Fastapi baby"}
